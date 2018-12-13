@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="Introduce el primer numero"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/campo1"
+        android:hint="Introduce el segundo numero"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campo2"
+        android:layout_centerHorizontal="true"
+        android:onClick="oncheckBoxClicked"
+        android:text="Sumar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxSumar"
+        android:layout_centerHorizontal="true"
+        android:onClick="oncheckBoxClicked"
+        android:text="Restar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxRestar"
+        android:layout_centerHorizontal="true"
+
+        android:onClick="oncheckBoxClicked"
+        android:text="Multiplicar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxDividir"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxMultiplicar"
+        android:layout_centerHorizontal="true"
+        android:onClick="oncheckBoxClicked"
+        android:text="Dividir" />
+
+    <Button
+        android:id="@+id/button_calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBoxDividir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Calcular" />
+
+    <TextView
+        android:id="@+id/resultadoSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_calcular"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/resultadoResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultadoSuma"/>
+
+    <TextView
+        android:id="@+id/resultadoMultiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultadoResta"/>
+
+    <TextView
+        android:id="@+id/resultadoDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultadoMultiplicacion"/>
+</RelativeLayout>
