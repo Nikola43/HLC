@@ -6,6 +6,7 @@
         <item>Restar</item>
         <item>Multiplicar</item>
         <item>Dividir</item>
+        <item>Potencia</item>
     </string-array>
 </resources>
 
